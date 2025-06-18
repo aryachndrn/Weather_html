@@ -20,18 +20,30 @@
                     <img src="images/humidity.png">
                     <div>
                         <p class="humidity">50%</p>
-                        <p>humidity</p>
+                        <p class="h">humidity</p>
                     </div>  
                 </div>
                 <div class="col">
                     <img src="images/wind.png">
                     <div>
-                        <p class="Wind">15 km/h</p>
-                        <p>Wind Speed</p>
+                        <p class="wind">15 km/h</p>
+                        <p class="w">Wind Speed</p>
                     </div>  
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        const apiKey = "316def01175adef153bb7c4e8d627d54";
+        const apiURL = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=bangalore";
+        
+        async function  checkWeather(){
+            const response = await fetch(apiURL + `&appid=${apiKey}`);
+            var data = await response.json();
+
+            console.log(data);
+            
+        }
+    </script>
 </body>
 </html>

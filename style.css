@@ -7,7 +7,6 @@
 body
 {
     background: #222;
-
 }
 .card{
     width:90%;
@@ -70,7 +69,26 @@ body
     align-items: center;
     justify-content: space-between;
     padding:0 20px;
-    margin-top: 50px;
+    margin-top: 70px;
 
+}
+.col{
+    display:flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 50px;
+    margin-right: 5px;
+    
 
+}
+.humidity, .wind{
+    margin-top:0 ;
+    margin-left: 15px;
+    font-size: 25px;
+}
+.h,.w{
+    font-size: 16px;
+    margin-left: 15px;
 }
